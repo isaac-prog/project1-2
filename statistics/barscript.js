@@ -49,15 +49,15 @@ document.querySelector("#filter-btn2").addEventListener('click', function(){
         return d.x >= startYearBar && d.x <= endYearBar
     })
 
-    let barFiltered5 = barMotorVehicles.filter(function(d){
+    let barFiltered5 = barMotorVehiclesData.filter(function(d){
         return d.x >= startYearBar && d.x <= endYearBar
     })
 
-    let barFiltered6 = barGoodsVehicles.filter(function(d){
+    let barFiltered6 = barGoodsVehiclesData.filter(function(d){
         return d.x >= startYearBar && d.x <= endYearBar
     })
 
-    let barFiltered7 = barLorry.filter(function(d){
+    let barFiltered7 = barLorryVehicles.filter(function(d){
         return d.x >= startYearBar && d.x <= endYearBar
     })
 
@@ -122,8 +122,8 @@ barMotorVehiclesData = await loadBarMotorVehiclesData("./cTest.json");
 barMotorVehiclesData = transformBarMotorVehiclesData(barMotorVehiclesData);
 barGoodsVehiclesData = await loadBarGoodsVehiclesData("./cTest.json");
 barGoodsVehiclesData = transformBarGoodsVehiclesData(barGoodsVehiclesData);
-barLorryData = await loadBarLorryData("./cTest.json");
-barLorryData = transformBarLorryData(barLorryData);
+barLorryVehicles = await loadBarLorryData("./cTest.json");
+barLorryVehicles = transformBarLorryData(barLorryVehicles);
 barBuses= await loadBarBusesData("./cTest.json");
 barBuses = transformBarBusesData(barBuses);
 barOthers= await loadBarOthersData("./cTest.json");
@@ -155,7 +155,7 @@ barChart.updateSeries([
 },
 {
     'name': 'Lorry injury',
-    'data': barLorryData
+    'data': barLorryVehicles
 },
 {
     'name': 'Others injury',
