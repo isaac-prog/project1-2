@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./statistics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <head>
+      <div class="nav">
+      <div class="navbar-contents color-black box">
+        <a class="navbar-contents-item button no-display-medium no-display-large burger-right black-hover color-black" onclick="hamburgerHTML()">
+        <i class="fa fa-bars"></i></a>
+        <a href="../index.html" class="navbar-contents-item button color-black">Home</a>
+        <a href="./statistics.html" class="navbar-contents-item button no-display-small hover-black">Statistics</a>
+       
+      </div>
+    
+      <!-- Navbar on small screens -->
+      <div id="navbar" class="navbar-contents-block color-black no-display no-display-large no-display-medium ">
+        <a href="./statistics.html" class="navbar-contents-item button ">Statistics</a>
+      </div>
+    </div>
+  </head>
+
+  <body>
+    <div class="stats-container">
+    <div>
+      <h2>Chart1</h2>
+      <div>
+        <input type="text" id="start-year" placeholder="Enter start year"/>
+        <input type="text" id="end-year" placeholder="Enter end year"/>
+        <button id="filter-btn">Filter</button>
+      </div>
+      <div id="chart"></div>
+    </div>
+
+    <div>
+      <h2>Chart2</h2>
+      <div>
+        <input type="text" id="start-year-bar" placeholder="Enter start year"/>
+        <input type="text" id="end-year-bar" placeholder="Enter end year"/>
+        <button id="filter-btn2">Filter</button>
+      </div>
+      <div id="barchart"></div>
+    </div>
+
+    <div>
+      <h2>Chart3</h2>
+      <div id="donutchart"></div>
+    </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+    <script src="level2Data.js"></script>
+    <script src="level2Scripts.js"></script>
+    <script src="../main/webpage.js"></script>
+  </body>
+
+</footer>
+</html>
