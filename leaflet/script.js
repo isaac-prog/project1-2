@@ -1,16 +1,15 @@
-// Leaflet, coordinates are represented by an array of 2 elements
-// [ <lat>, <lng> ]
-let singapore = [1.29, 103.85];
-// L is defined by Leaflet's JavaScript file
-let map = L.map('map'); // create a map and render it to the #map
-map.setView(singapore, 13);
+const API_KEY = '1gZJIZjnHLYnK35Cyxiyw9PkzlZC5CeP';
+const APPLICATION_NAME = 'My Application';
+const APPLICATION_VERSION = '1.0';
+ 
+tt.setProductInfo(APPLICATION_NAME, APPLICATION_VERSION);
 
-L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieWl6aGVnYW4xOTk5IiwiYSI6ImNrb3hyc3J2aDAzaXgyb2trN3AycGhsOWkifQ.1cjx5absolRcCGBgaajnDA', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
-}).addTo(map);
+const GOLDEN_GATE_BRIDGE = {lng: -122.47483, lat: 37.80776};
+ 
+var map = tt.map({
+  key: API_KEY,
+  container: 'map-div',
+  center: GOLDEN_GATE_BRIDGE,
+  zoom: 12
+});
 
