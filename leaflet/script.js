@@ -5,8 +5,10 @@ let singapore = [1.29, 103.85];
 let map = L.map('map'); // create a map and render it to the #map
 map.setView(singapore, 13);
 
-L.tileLayer('https://api.tomtom.com/map/1/tile/basic/main/0/0/0.png?view=Unified&key=1gZJIZjnHLYnK35Cyxiyw9PkzlZC5CeP', {
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoieWl6aGVnYW4xOTk5IiwiYSI6ImNrb3hyc3J2aDAzaXgyb2trN3AycGhsOWkifQ.1cjx5absolRcCGBgaajnDA', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
+    id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw' //demo access token
