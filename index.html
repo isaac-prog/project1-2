@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./statistics/news.css">
 
 </head>
 <body>
@@ -38,10 +40,12 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
   </div>
 
   <div id="all-pages">
-      </div>
+    </div>
 
       <div id="page-1" class="page">
+
         <div class="stats-container">
+
           <div>
             <h2>Chart1</h2>
             <div>
@@ -67,30 +71,57 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
             <div id="donutchart"></div>
           </div>
 
+        </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+          <script src="./statistics/data.js"></script>
+          <script src="./statistics/script.js"></script>
+          <script src="./statistics/level2Data.js"></script>
+          <script src="./statistics/level2Scripts.js"></script>
+          <script src="./statistics/bardata.js"></script>
+          <script src='./statistics/barscript.js'></script>
+          
+      </div>
 
       <div id="page-2" class="page hidden">
-          <h1>Page2</h1>
+
+        <div class="page1-center" style="padding:128px 16px">
+          <div id="search-page" style="position:relative;height:300px;">
+            <div class="news-header">
+      
+              <h2>Traffic accident related news articles</h2>
+              <div class="textbox-container">
+                <input type="text" id="news-search" class="text-field" placeholder="e.g. illicit drugs">
+                <button id="search-btn" class="searchbtn">🔍</i></button>
+              </div>
+            </div>
+          </div>
+      
+      
+          <div class="row">
+            <div id="news-display"></div>
+          </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="./news/news.js"></script>
+
       </div>
+
       <div id="page-3" class="page hidden">
           <h1>Page3</h1>
       </div>
+
       <div id="page-4" class="page hidden">
           <h1>Page4</h1>
       </div>
-  </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
 crossorigin="anonymous"></script>
 <script src="./main/webpage.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-<script src="./statistics/data.js"></script>
-<script src="./statistics/script.js"></script>
-<script src="./statistics/level2Data.js"></script>
-<script src="./statistics/level2Scripts.js"></script>
-<script src="./statistics/bardata.js"></script>
-<script src='./statistics/barscript.js'></script>
 </body>
 </html>
