@@ -1,33 +1,96 @@
 <!DOCTYPE html>
+
+<head>
 <title>Counselling</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./main/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-<head>
-  <div class="nav">
-  <div class="navbar-contents color-black box">
-    <a class="navbar-contents-item button no-display-medium no-display-large burger-right black-hover color-black" onclick="hamburgerHTML()">
-    <i class="fa fa-bars"></i></a>
-    <a href="index.html" class="navbar-contents-item button color-black">Home</a>
-    <a href="statistics/statistics.html" class="navbar-contents-item button no-display-small hover-black">Statistics</a>
-    <a href="news/news.html" class="navbar-contents-item button no-display-small hover-black">News</a>
-    <a href="leaflet/index.html" class="navbar-contents-item button no-display-small hover-black">Map</a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navbar" class="navbar-contents-block color-black no-display no-display-large no-display-medium ">
-    <a href="statistics/statistics.html" class="navbar-contents-item button ">Statistics</a>
-  </div>
-</div>
 </head>
 <body>
-     
+  <!-- <div class="nav">
+    <div class="navbar-contents color-black box">
+      <a class="navbar-contents-item button no-display-medium no-display-large burger-right black-hover color-black" onclick="hamburgerHTML()">
+      <i class="fa fa-bars"></i></a>
+      <a href="index.html" class="navbar-contents-item button color-black">Home</a>
+      <a href="statistics/statistics.html" class="navbar-contents-item button no-display-small hover-black">Statistics</a>
+      <a href="news/news.html" class="navbar-contents-item button no-display-small hover-black">News</a>
+      <a href="leaflet/index.html" class="navbar-contents-item button no-display-small hover-black">Map</a>
+    </div> -->
+  
+    <!-- Navbar on small screens -->
+    <div id="navbar" class="navbar-contents-block color-black no-display no-display-large no-display-medium ">
+      <a href="statistics/statistics.html" class="navbar-contents-item button ">Statistics</a>
+    </div>
+  </div>
 
 </div>
 
-<script src="main/webpage.js"></script>
+<div class="container-fluid">
+  <div>
+      <button id="page1-btn" class="page-button" data-page="1">Page 1</button>
+      <button id="page2-btn" class="page-button" data-page="2">Page 2</button>
+      <button id="page3-btn" class="page-button" data-page="3">Page 3</button>
+      <button id="page3-btn" class="page-button" data-page="4">Page 4</button>
+  </div>
 
+  <div id="all-pages">
+      </div>
+
+      <div id="page-1" class="page">
+        <div class="stats-container">
+          <div>
+            <h2>Chart1</h2>
+            <div>
+              <input type="text" id="start-year" placeholder="Enter start year"/>
+              <input type="text" id="end-year" placeholder="Enter end year"/>
+              <button id="filter-btn">Filter</button>
+            </div>
+            <div id="chart"></div>
+          </div>
+      
+          <div>
+            <h2>Chart2</h2>
+            <div>
+              <input type="text" id="start-year-bar" placeholder="Enter start year"/>
+              <input type="text" id="end-year-bar" placeholder="Enter end year"/>
+              <button id="filter-btn2">Filter</button>
+            </div>
+            <div id="barchart"></div>
+          </div>
+      
+          <div>
+            <h2>Chart3</h2>
+            <div id="donutchart"></div>
+          </div>
+
+
+      <div id="page-2" class="page hidden">
+          <h1>Page2</h1>
+      </div>
+      <div id="page-3" class="page hidden">
+          <h1>Page3</h1>
+      </div>
+      <div id="page-4" class="page hidden">
+          <h1>Page4</h1>
+      </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+crossorigin="anonymous"></script>
+<script src="./main/webpage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="./statistics/data.js"></script>
+<script src="./statistics/script.js"></script>
+<script src="./statistics/level2Data.js"></script>
+<script src="./statistics/level2Scripts.js"></script>
+<script src="./statistics/bardata.js"></script>
+<script src='./statistics/barscript.js'></script>
 </body>
 </html>

@@ -141,4 +141,44 @@ html {
   /* color setup */
   .color-black,.black-hover:hover{color:#fff!important;background-color:#4d4d4d!important}
   
-  
+  .page {
+    height: 100vh;
+    box-sizing: border-box; /* box-sizing controls whether the margin and padding are considered to be 
+      part of the element width */
+    position: absolute;
+}
+
+#page-1 {
+    width: 100%
+}
+
+#page-2 {
+    width: 100%
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+#page-3 {
+    width: 100%;
+}
+
+#page-4 {
+  width: 100%
+}
+
+.hidden {
+    transition: transform 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    transition: transform 1s;
+    transform: translateX(0);
+}
+
+#all-pages {
+    position: relative;
+}
