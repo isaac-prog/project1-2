@@ -1,7 +1,7 @@
 let donutChartOptions = {
     'chart': {
       'type': 'donut',
-      'height': '100%'
+      'height': '450px'
     },
     'fill': {
       'type': 'gradient',
@@ -14,7 +14,7 @@ let donutChartOptions = {
       },
       'plotOptions': {
         'pie': {
-          'customScale': 0.5
+          'customScale': 0.8
         }
       }
     }
