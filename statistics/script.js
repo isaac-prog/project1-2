@@ -42,9 +42,9 @@ document.querySelector("#filter-btn").addEventListener('click', function(){
 })
 
 window.addEventListener('DOMContentLoaded',async function(){
-deadData = await loadDeadData("cTest.json");
+deadData = await loadDeadData("../cTest.json");
 deadData = transformDeadData(deadData);
-injuredData = await loadInjuredData('cTest.json');
+injuredData = await loadInjuredData('../cTest.json');
 injuredData = transformInjuredData(injuredData);
 
 chart.updateSeries([

@@ -28,23 +28,23 @@ let donutChartOptions = {
     let donutOthersData;
   
     window.addEventListener('DOMContentLoaded', async function () {
-        donutPedestriansData = await loadDonutPedestriansData('./cTest.json');
+        donutPedestriansData = await loadDonutPedestriansData('../cTest.json');
         donutPedestriansData = transformDonutPedestriansData(donutPedestriansData);
-        donutPMDData = await loadDonutPMDData('./cTest.json');
+        donutPMDData = await loadDonutPMDData('../cTest.json');
         donutPMDData = transformDonutPMDData(donutPMDData);
-        donutCyclistData = await loadDonutCyclistData('./cTest.json');
+        donutCyclistData = await loadDonutCyclistData('../cTest.json');
         donutCyclistData = transformDonutCyclistData(donutCyclistData);
-        donutMotorcyclistData = await loadDonutMotorcyclistData('./cTest.json');
+        donutMotorcyclistData = await loadDonutMotorcyclistData('../cTest.json');
         donutMotorcyclistData = transformDonutMotorcyclistData(donutMotorcyclistData);
-        donutMotorvehiclesData = await loadDonutMotorvehiclesData('./cTest.json');
+        donutMotorvehiclesData = await loadDonutMotorvehiclesData('../cTest.json');
         donutMotorvehiclesData = transformDonutMotorvehiclesData(donutMotorvehiclesData);
-        donutGoodsData = await loadDonutGoodsData('./cTest.json');
+        donutGoodsData = await loadDonutGoodsData('../cTest.json');
         donutGoodsData = transformDonutGoodsData(donutGoodsData);
-        donutLorryData = await loadDonutLorryData('./cTest.json');
+        donutLorryData = await loadDonutLorryData('../cTest.json');
         donutLorryData = transformDonutLorryData(donutLorryData);
-        donutBusesData = await loadDonutBusesData('./cTest.json');
+        donutBusesData = await loadDonutBusesData('../cTest.json');
         donutBusesData = transformDonutBusesData(donutBusesData);
-        donutOthersData = await loadDonutOthersData('./cTest.json');
+        donutOthersData = await loadDonutOthersData('../cTest.json');
         donutOthersData = transformDonutOthersData(donutOthersData);
       
       let donut = donutPedestriansData.concat(donutPMDData,donutCyclistData, donutMotorcyclistData, donutMotorvehiclesData, donutGoodsData, donutLorryData, donutBusesData, donutOthersData)
