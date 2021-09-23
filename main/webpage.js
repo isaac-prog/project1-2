@@ -7,7 +7,7 @@ function hamburgerHTML() {
     }
   }
 // select all the page buttons
-let allButtons = document.querySelectorAll('.page-button');
+let allButtons = document.querySelectorAll('.navbar-contents-item');
 
 for (let button of allButtons) {
     button.addEventListener('click', function(event){

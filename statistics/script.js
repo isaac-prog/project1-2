@@ -22,7 +22,6 @@ document.querySelector("#filter-btn").addEventListener('click', function(){
 
     let startYear = parseInt(document.querySelector('#start-year').value);
     let endYear = parseInt(document.querySelector('#end-year').value);
-    //let inputSex = parse(document.querySelector('#sex').value);
 
     let filtered2 = deadData.filter(function(d){
         return d.x >= startYear && d.x <= endYear
@@ -43,9 +42,9 @@ document.querySelector("#filter-btn").addEventListener('click', function(){
 })
 
 window.addEventListener('DOMContentLoaded',async function(){
-deadData = await loadDeadData("./cTest.json");
+deadData = await loadDeadData("cTest.json");
 deadData = transformDeadData(deadData);
-injuredData = await loadInjuredData('./cTest.json');
+injuredData = await loadInjuredData('cTest.json');
 injuredData = transformInjuredData(injuredData);
 
 chart.updateSeries([

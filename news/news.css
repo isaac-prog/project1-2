@@ -87,10 +87,6 @@
   /* color setup */
   .color-black,.black-hover:hover{color:#fff!important;background-color:#4d4d4d!important}
   
-  body{
-  background-color: black;
-  }
-  
   .textbox-container{
   position: absolute;
     top: 50%;

@@ -110,23 +110,23 @@ document.querySelector("#filter-btn2").addEventListener('click', function(){
 })
 
 window.addEventListener('DOMContentLoaded',async function(){
-barPedestriansData = await loadBarPedestriansData("./cTest.json");
+barPedestriansData = await loadBarPedestriansData("cTest.json");
 barPedestriansData = transformBarPedestriansData(barPedestriansData);
-barPMDData = await loadBarPMDData("./cTest.json");
+barPMDData = await loadBarPMDData("cTest.json");
 barPMDData = transformBarPMDData(barPMDData);
-barCyclistData = await loadBarCyclistData("./cTest.json");
+barCyclistData = await loadBarCyclistData("cTest.json");
 barCyclistData = transformBarCyclistData(barCyclistData);
-barMotorCyclistData = await loadBarMotorCyclistData("./cTest.json");
+barMotorCyclistData = await loadBarMotorCyclistData("cTest.json");
 barMotorCyclistData = transformBarMotorCyclistData(barMotorCyclistData);
-barMotorVehiclesData = await loadBarMotorVehiclesData("./cTest.json");
+barMotorVehiclesData = await loadBarMotorVehiclesData("cTest.json");
 barMotorVehiclesData = transformBarMotorVehiclesData(barMotorVehiclesData);
-barGoodsVehiclesData = await loadBarGoodsVehiclesData("./cTest.json");
+barGoodsVehiclesData = await loadBarGoodsVehiclesData("cTest.json");
 barGoodsVehiclesData = transformBarGoodsVehiclesData(barGoodsVehiclesData);
-barLorryVehicles = await loadBarLorryData("./cTest.json");
+barLorryVehicles = await loadBarLorryData("cTest.json");
 barLorryVehicles = transformBarLorryData(barLorryVehicles);
-barBuses= await loadBarBusesData("./cTest.json");
+barBuses= await loadBarBusesData("cTest.json");
 barBuses = transformBarBusesData(barBuses);
-barOthers= await loadBarOthersData("./cTest.json");
+barOthers= await loadBarOthersData("cTest.json");
 barOthers = transformBarOthersData(barOthers);
 barChart.updateSeries([
 {
