@@ -16,6 +16,10 @@ html {
   cursor: pointer;
 }
 
+.navbar-contents{
+  width: 100% !important
+}
+
 /* vertical hamburger setup */
 .navbar-contents-block .navbar-contents-item {
   width: 100%;
@@ -93,16 +97,20 @@ html {
 
 .page1-center {
   text-align: center !important;
-  background-image: url("drug-wallpaper.jpg");
+  background-image: url("../images/traffica.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 100vh;
   padding: 128px 16px;
 }
 
 .header-subclass {
-  color: white;
+  transition: all 0.5s ease;
+  animation-name: transition;
+  animation-duration: 4s;
   font-size: 2.5vw;
+  color: red
+
 }
 
 body {
@@ -159,9 +167,17 @@ body {
 }
 
 
-.DrugVio-alignment {
+.title-alignment {
   font-size: 8vw;
-  color: white;
+  color: red;
+  padding-top: 100px;
+  animation-name: transition;
+  animation-duration: 5s;
+}
+
+@keyframes transition {
+  from {color: whitesmoke;}
+  to {color: red;}
 }
 
 .margin-top {
@@ -308,3 +324,34 @@ body {
   background-color: #ccc !important;
 }
 
+#filter-btn{
+  border-radius: 10px
+}
+
+#filter-btn2{
+  border-radius: 10px
+}
+
+/* flexobox and its contents */
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
+}
+
+.stats-container>div {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  margin: 50px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+#donutchart{
+  height: 10%;
+  width: 100%;
+}

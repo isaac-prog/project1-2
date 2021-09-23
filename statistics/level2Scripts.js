@@ -11,6 +11,11 @@ let donutChartOptions = {
       'labels': ['Pedestrians', 'PMDs','cyclist','motorcyclist','motor vehicles','goods & vans','lorry & tippers','buses','others'],
       'noData': {
         'text': "Please wait, loading data"
+      },
+      'plotOptions': {
+        'pie': {
+          'customScale': 0.5
+        }
       }
     }
   

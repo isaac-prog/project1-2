@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./main/style.css">
-<link rel="stylesheet" href="./statistics/statistics.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -17,14 +16,15 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
     <div class="navbar-contents color-black box">
       <a class="navbar-contents-item button no-display-medium no-display-large burger-right black-hover color-black" onclick="hamburgerHTML()">
       <i class="fa fa-bars"></i></a>
-      <button id="page1-btn" class="navbar-contents-item button color-black" data-page="1">Statistics</button>
-      <button id="page2-btn" class="navbar-contents-item button no-display-small hover-black" data-page="2">News</button>
-      <button id="page3-btn" class="navbar-contents-item button no-display-small hover-black" data-page="3">Map</a>
+      <button id="page1-btn" class="navbar-contents-item button color-black" data-page="1">Home</button>
+      <button id="page2-btn" class="navbar-contents-item button no-display-small hover-black" data-page="2">Statistics</button>
+      <button id="page3-btn" class="navbar-contents-item button no-display-small hover-black" data-page="3">News</a>
     </div>
   
     <!-- Navbar on small screens -->
     <div id="navbar" class="navbar-contents-block color-black no-display no-display-large no-display-medium ">
-      <a href="statistics/statistics.html" class="navbar-contents-item button ">Statistics</a>
+      <button id="page1-btn" class="navbar-contents-item button color-black" data-page="2">Statistics</button>
+      <button id="page3-btn" class="navbar-contents-item button no-display-small hover-black" data-page="3">News</a>
     </div>
   </div>
 
@@ -33,6 +33,51 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
 <div class="container-fluid">
 
       <div id="page-1" class="page">
+        <header class="page1-center">
+          <h1 class="title-alignment">Traffic Accidents</h1>
+          <p class ="header-subclass"><b>Stop accidents before they stop you</b></p>
+          <a href = '#help'button class="button color-black margin-top">Get Started</button></a>
+        </header>
+
+        <div class="flex-container" id="help">
+
+          <a href="https://ssdcl.com.sg/" style="text-decoration: none;">
+            <div class="flex-space flex-card">
+              <img src="./images/ssdc.jpg" width="245" height="245" alt="sana">
+              <div class="card-body"><h4>Driving School</h4>
+              </div>
+              </div>
+              </a>
+      
+            <a href="https://www.police.gov.sg/Advisories/Traffic/Traffic-Matters" style="text-decoration: none;">
+            <div class="flex-space flex-card">
+              <img src="./images/tp.jpg" width="245" height="245" alt="sana">
+              <div class="card-body"><h4>Traffic Guidelines</h4>
+              </div>
+              </div>
+              </a>
+      
+            <a href="https://gia.org.sg/motor-insurance/22-premium-renewal-of-policy/349dos-and-don-ts-following-an-accident-dos-and-don-ts-following-an-accident.html" style="text-decoration: none;">
+            <div class="flex-space flex-card">
+              <img src="./images/insurance.png" width="245" height="245" alt="sana">
+              <div class="card-body"><h4>RTA insurance guide</h4>
+              </div>
+              </div>
+              </a>
+      
+            <a href="https://www.healthhub.sg/a-z/diseases-and-conditions/666/post-traumatic-stress-reactions" style="text-decoration: none;">
+            <div class="flex-space flex-card">
+              <img src="./images/redcross.jpg" width="245" height="245" alt="sana">
+              <div class="card-body"><h4>Psychological help</h4>
+              </div>
+              </div>
+              </a>
+            
+      
+      </div>
+      </div>
+
+      <div id="page-2" class="page hidden">
 
         <div class="stats-container">
 
@@ -65,12 +110,12 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
           
       </div>
 
-      <div id="page-2" class="page hidden">
+      <div id="page-3" class="page hidden">
 
         <div class="page1-center" style="padding:128px 16px">
           <div id="search-page" style="position:relative;height:300px;">
+
             <div class="news-header">
-      
               <h2>Traffic accident related news articles</h2>
               <div class="textbox-container">
                 <input type="text" id="news-search" class="text-field" placeholder="e.g. Car crash">
@@ -86,15 +131,6 @@ integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3Ah
         </div>
 
       </div>
-
-      <div id="page-3" class="page hidden">
-          <h1>Page3</h1>
-      </div>
-
-      <div id="page-4" class="page hidden">
-          <h1>Page4</h1>
-      </div>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
 <script src="./news/news.js"></script>
