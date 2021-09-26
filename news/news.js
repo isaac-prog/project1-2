@@ -19,11 +19,25 @@ btn.addEventListener('click', function(){
 
 function updateDisplay(articles) {
   for (let eachArticles of articles) {
-    let htmlSnippet = `<a href='${eachArticles.url}' style='text-decoration: none'><div class="card" style="width: 100%; border: 2px solid black">
-            <img src='${eachArticles.image}' style="width:50%;height:50%;margin-right:15px;">
-                <h5 class="card-title" style='font-size:3vw'>${eachArticles.title}</h5>
+     
+    let newsApiDate = eachArticles.publishedAt; // got from the Api
+ 
+    let timestamp = new Date(newsApiDate).getTime();
+    let Day = new Date(timestamp).getDate();
+    let Month = new Date(timestamp).getMonth() + 1;
+    let Year = new Date(timestamp).getFullYear();
+    let OurNewDateFormat = `${Day}/${Month}/${Year}`;
+ 
+      console.log(timestamp)
+      console.log(OurNewDateFormat)
+      console.log(eachArticles.url)
+    
+
+    let htmlSnippet = `<a href='${eachArticles.url}' style='text-decoration: none'><div class="card" style="width: 100%; border: 2px solid black; display: flex; justify-content: center; align-items:center">
+            <img src='${eachArticles.image}' style="width:50%;height:50%;margin-right:15px;>
+                <h2 class="card-title" style='font-size:3vw'>${eachArticles.title}</h2>
                 <small style='font-size:2.5vw'>${eachArticles.description}</small>
-                    <p><small>Date published: ${eachArticles.publishedAt}<small></p>
+                 <p><small>Date published: ${OurNewDateFormat}<small></p>
                     
             </div>
             </div>
