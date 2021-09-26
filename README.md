@@ -1,102 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+## About SG Traffic
 
-Welcome isaac-prog,
+SG Traffic is a basic informative drug-abuse website that allows user to gather general information about the abuses of drugs. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+## Project Complexity
 
-## Gitpod Reminders
+SG Traffic follows theme 2 of the following complexity matrix:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+* Consume the GET endpoint of an API, or consume a CSV/JSON file
+* Adding or removing DOM elements to the display (map, DOM tree, game screen) base on user's actions
+* Modifying the CSS of DOM elements based on the user's actions 
+* Use of 1D traversal of array 
+* Each use of a unique functional mapping method (map, reduce, filter)
+* Each use of CSS layout technique (Bootstrap columns, flex box, grid) 
+* Each instance of a graph changing dynamically based on the user's action 
+* Each instance of one type of graph covered in class (bar, line, chart etc.) 
+* Each of one of the following: synchronized chart, chart with at least 3 series, chart reading data from JSON/CSV files or API 
+* Each customization added to the default chart (change of colors, for example) 
+* Each instance of one type of graph not covered in class
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## UI/UX
+* User stories:
+As a non-profit anti-drug abuse organisation, I want to provide resources about drug abuse related contents all within a single website so that youths at risk, counsellers and educators can access these materials with ease and to raise awareness of the abuse of drugs.
 
-Another blue button should appear to click: _Open Browser_.
+* link to the wireframe: https://app.moqups.com/mLztc8RnHf/view/page/adf9fab7d
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Acceptance criteria:
+1. Links to Singapore traffic related websites
+2. statistic to show Traffic related accidents in Singapore
+3. A search engine to search traffic-related articles with ease
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+* 5 planes of the UX
+1. Surface: The visual design was set to a dark theme, in line with the dark side of traffic negligence. The image depicts the aftermath of an accident, a grim reminder to stay safe on the roads
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+2. Skeleton design: The interface was set to a simple yet modern feel to the webpage. As youth has a shorter attention span, the use of less words and more pictorial form will keep them engaged for a longer time. As for the navigation design, all materials can be achieved within 3 clicks, so that the targeted audience will spend a longer time interacting with the website.
 
-To log into the Heroku toolbelt CLI:
+3. Structure: The more vital links of traffic guidelines and help are kept at the main page, as users seeking traffic related information can reduce the number of clicks as compared to the statistics and news. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+4. scope: The functional specs of filtering the statistics and getting news articles with the use of search engine to meet the user's need of getting all resources within a website.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+5.Strategy: The purpose of the website is to raise awareness of the adverse effects of traffic negligence. The end-user can be more well informed of the effects of safety on the roads, educators can utilise materials to teach youths about the dangers of traffic ignorance while the organisation can achieve its goals of raising awareness of traffic safety.
 
-------
+## Features
+The website is targeted to educators to help raise awareness of the issues of traffic negligence. The website provides statistics, news and Singapore traffic related links, allowing users to search for their information within three clicks.
 
-## Release History
+## Technologies used
+1. [Font awesome](https://fontawesome.com/ "Font Awesome")
+   Font Awesome is used across the project HTML for icons used.
+2. [ApexCharts](https://apexcharts.com/ "Apex Charts")
+   Apex Charts is used for statistic graph in the statistic page
+3. [Axios Library](https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js "Axios Library")
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Testing
+1. Test if webpage is mobile responsive: 
+    a. Right click and select inspect element
+    b. Ctrl + Shift + M (For windows users) OR Cmd + M (For Mac users)
+    c. under the responsive dropdown, select desired screen width. Contents on the screen should readjust accordingly
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+2. Test if filter works in statistics line graph
+    a. Enter the start and end year accordingly in the text boxes provided.
+    b. Graph should readjust according to the time-frame allocated by you.
+    c. Alternatively, highlighting a region in the line/bar chart should cause the chart to filter within the x-axis of the highlighted region
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+3. Clicking on the legend on the line/bar chart should toggle the view of the chart shown.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+4. Test for searching of news articles.
+    a. Enter keywords into the search bar,
+    b. everytime a new keyword is searched, the page should clear old contents and provide the latest content based on the keywords searched.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+Note: The news Api only allows up to 100 request a day due to limitation of using a free plan.
