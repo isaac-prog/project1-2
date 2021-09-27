@@ -103,9 +103,16 @@ Note: The news Api only allows up to 100 request a day due to limitation of usin
 8. you will be provided a new link, click on the new link and you will be redirected to your deployed website. Deployment done.
 
 ## credit 
-(credit links and images and bootstrap and apexcharts)
+
 GIA image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcz.linkedin.com%2Fcompany%2Fgiasingapore&psig=AOvVaw1PXW1ZI3pDXXqwLITYy2AH&ust=1632819578668000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMCI3YrlnvMCFQAAAAAdAAAAABAD
+
 red cross image: https://i0.wp.com/www.concrete-online.co.uk/wp-content/uploads/2016/12/Red-Cross-Jon-Harald-S%C3%B8by-wikipedia.org_.jpg?fit=800%2C533&ssl=1
+
 SSDC image: https://ssdcl.com.sg/wp-content/uploads/2019/03/course-1-new.jpg
 Traffic police image: https://www.police.gov.sg/-/media/saluting_woman4.jpg?la=en&hash=94EC113503347327900C5B3DB960DF678102096B
+
 Traffic accident wallpaper: https://media.istockphoto.com/photos/car-accident-picture-id969500140?k=20&m=969500140&s=612x612&w=0&h=D7o9GI7gyAh0ychyMi5sGMAWI0pTNURvw3PBsUOzbBg=
+
+apexcharts: https://apexcharts.com/
+
+Bootstrap 5: https://getbootstrap.com/docs/4.0/components/navbar/
