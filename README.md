@@ -101,7 +101,7 @@ Note: The news Api only allows up to 100 request a day due to limitation of usin
 6. select the Repo that you wish to deploy
 7. leave the settings as it is, do not manipulate the settings and select "deploy"
 8. you will be provided a new link, click on the new link and you will be redirected to your deployed website. Deployment done.
-
+https://sharp-keller-bf275e.netlify.app
 ## credit 
 
 GIA image: https://www.google.com/url?sa=i&url=https%3A%2F%2Fcz.linkedin.com%2Fcompany%2Fgiasingapore&psig=AOvVaw1PXW1ZI3pDXXqwLITYy2AH&ust=1632819578668000&source=images&cd=vfe&ved=0CAwQjhxqFwoTCMCI3YrlnvMCFQAAAAAdAAAAABAD
